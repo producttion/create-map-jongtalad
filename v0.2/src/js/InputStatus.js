@@ -11,7 +11,7 @@ import Index from '../Component/Index';
 
 
 
- var InputStatus = EventEmitter(function (map, tileWidth) {
+var InputStatus = EventEmitter(function (map, tileWidth) {
   this.gameTools = new GameTools(map);
 
   this.gameTools.addEventListener(Messages.QUERY_WINDOW_NEEDED, MiscUtils.reflectEvent.bind(this, Messages.QUERY_WINDOW_NEEDED));
